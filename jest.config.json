@@ -1,0 +1,19 @@
+{
+  "testEnvironment": "node",
+  "testTimeout": 30000,
+  "setupFiles": ["dotenv/config"],
+  "coverageDirectory": "coverage",
+  "collectCoverageFrom": [
+    "src/**/*.js",
+    "!src/app.js",
+    "!src/config/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 60,
+      "functions": 70,
+      "lines": 70,
+      "statements": 70
+    }
+  }
+}
